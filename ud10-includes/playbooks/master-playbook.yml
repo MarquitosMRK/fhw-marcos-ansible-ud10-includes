@@ -1,0 +1,7 @@
+---
+- name: Gestion Aplicaciones
+  hosts: webservers
+  become: yes
+  tasks: Includes
+    - name: Desinstalar apache2
+    include: "env-preparation-playbook.yaml"
